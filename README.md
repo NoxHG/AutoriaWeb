@@ -30,16 +30,16 @@ Este repositório reúne todos os exercícios, atividades e projetos práticos d
 
 ## 📁 Estrutura do Repositório
 
-AutoriaWeb/
-├── 01-aulas/
-├── 02-fundamentos/
-├── 03-css-avancado/
-├── 04-layouts-responsivos/
-├── 05-javascript-basico/
-├── 06-projetos/
-├── 07-exercicios
-├── assets/
-└── README.md
+AutoriaWeb/  
+├── 01-aulas/  
+├── 02-fundamentos/  
+├── 03-css-avancado/  
+├── 04-layouts-responsivos/  
+├── 05-javascript-basico/  
+├── 06-projetos/  
+├── 07-exercicios  
+├── assets/  
+└── README.md  
 
 Cada pasta contém os exercícios e atividades daquela semana/unidade.
 
