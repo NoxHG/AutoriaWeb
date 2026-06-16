@@ -1,0 +1,38 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu img{
+    width: 80px;
+    height: auto;
+    transform: scale(1.0);
+}
+
+.menu img {
+    transition: all 0.3s ease;
+}
+
+.menu img:hover {
+    transform: scale(1.2);
+}
+
+a {
+    text-decoration: none;
+}
+
+#cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#cabecalho img {
+    width: 300px;
+    height: auto;
+}
