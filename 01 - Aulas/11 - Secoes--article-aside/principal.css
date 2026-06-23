@@ -1,0 +1,39 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background-color: #4c2a57;
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: #007BFF;
+}
+
+header {
+    display: flex;
+}
+
+header nav ul, ol {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+#nav2 {
+    margin-left: auto;
+    margin-right: 15rem;
+}
+
+#nav1 {
+    margin-left: auto;
+}
