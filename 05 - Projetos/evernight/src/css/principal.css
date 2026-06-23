@@ -1,7 +1,32 @@
+/* Config Geral */
 html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+    transition: ease 0.3s;
+}
+
+body {
+    background:
+    linear-gradient(
+        90deg,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(80, 0, 120, 0.4) 50%,
+            rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(../imagens/wallpapers/wp15832790-evernight-wallpapers.jpg);
+    background-position: center;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    color: #f0f0f0;
+    background-color: black;
+    position: relative;
+    min-height: 500px;
+}
+
+/* Cabeçalho */
 .menu {
     display: flex;
     gap: 20px;
@@ -22,17 +47,151 @@ html {
     transform: scale(1.2);
 }
 
-a {
-    text-decoration: none;
-}
-
 #cabecalho {
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 30px;
+    background-image: url(../imagens/wallpapers/wallpaper\ menu.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
 }
 
-#cabecalho img {
-    width: 300px;
-    height: auto;
+#cabecalho .menu li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(80,0,0);
+    transition: all 0.3s ease;
+    margin-right: 1rem;
 }
+
+#cabecalho ul {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+#menu2 {
+    display:flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+#cabecalho h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    padding-left: 3rem;
+}
+
+#cabecalho h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    padding-left: 3rem;
+    color: #f0f0f0;
+}
+
+#cabecalho h1 a{
+    color: #f0f0f0;
+}
+
+#cabecalho a{
+    color: #f0f0f0;
+}
+
+#cabecalho a:hover {
+    color: rgb(80,0,0);
+}
+/*  */
+
+/* Main */
+
+#introdução {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: rgba(240, 248, 255, 0.185);
+    border-radius: 20px;
+    border: rgba(240, 248, 255, 0) 10px solid;
+}
+
+#march7th {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: rgba(240, 248, 255, 0.185);
+    border-radius: 20px;
+    border: rgba(240, 248, 255, 0) 10px solid;
+}
+
+#teorias {
+    background-image: url(../imagens/wallpapers/wp15832834-evernight-wallpapers.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position: fixed;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: rgba(240, 248, 255, 0.185);
+    border-radius: 20px;
+    border: rgba(240, 248, 255, 0) 10px solid;
+    color: #ee4a7c;
+}
+
+#teorias hr {
+    color: rgba(155, 21, 11, 0.616);
+}
+
+#teorias ul {
+    color: #a02ea0;
+}
+
+#aparencia {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: rgba(240, 248, 255, 0.185);
+    border-radius: 20px;
+    border: rgba(240, 248, 255, 0) 10px solid;
+}
+
+#relacao {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: rgba(240, 248, 255, 0.185);
+    border-radius: 20px;
+    border: rgba(240, 248, 255, 0) 10px solid;
+}
+
+#identidade {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: rgba(240, 248, 255, 0.185);
+    border-radius: 20px;
+    border: rgba(240, 248, 255, 0) 10px solid;
+}
+
+#força {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: rgba(240, 248, 255, 0.185);
+    border-radius: 20px;
+    border: rgba(240, 248, 255, 0) 10px solid;
+}
+
+#personalidade {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: rgba(240, 248, 255, 0.185);
+    border-radius: 20px;
+    border: rgba(240, 248, 255, 0) 10px solid;
+}
+
