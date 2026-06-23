@@ -1,0 +1,12 @@
+section div{
+    padding: 2rem;
+}
+div.borda{
+    border: 1px solid black;
+}
+div.destaque{
+    background-color: aquamarine;
+}
+div#cookies{
+    text-align: center;
+}
