@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+
+    <style>
+        div#container {
+            border: 1px solid black;
+            max-width: 70rem; /* precisa definir a largura
+                                 para toda página */
+            margin: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            /* DIAGRAMAÇÃO */
+
+            /* 
+            - para usar o isply flex é necessario aplicar no container!!
+            - ao aplicar o display flex no container, todas as marcações ficarão
+            (por padrão) uma ao lado da outra
+            - similar ao display: 'inline-block', as marcações ficam uma do lado da outra, porém no DISPLAY:FLEX;
+            temos MUITO mais configurações.
+            */
+        }
+
+        div {
+            border: 1px solid black;
+            margin: 2rem;
+            padding: 2rem;
+        }
+
+        /* 
+        - O atributo de 'order' altera a ordem dos elementos do 
+        container que tem o display flex.
+        - a regra é colocar o atributo 'order' para todas
+        as marcações que estão dentro do container
+        */
+
+        div.a{ order: 3;}
+        div.b{ order: 5;}
+        div.c{ order: 2;}
+        div.d{ order: 4;}
+        div.e{ order: 1;}
+        div.f{ order: 7;}
+        div.g{ order: 6;}
+        div.h{ order: 8;}
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="a">
+            <p>1</p>
+        </div>
+        <div class="b">
+            <p>1</p>
+        </div>
+        <div class="c">
+            <p>1</p>
+        </div>
+        <div class="d">
+            <p>1</p>
+        </div>
+        <div class="e">
+            <p>1</p>
+        </div>
+        <div class="f">
+            <p>1</p>
+        </div>
+        <div class="g">
+            <p>1</p>
+        </div>
+        <div class="h">
+            <p>1</p>
+        </div>
+    </div>
+</body>
+
+</html>
