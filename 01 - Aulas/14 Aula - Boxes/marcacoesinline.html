@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>marcações-inline</title>
+  </head>
+  <style>
+    a {
+      background-color: aqua;
+      width: 5rem; /* Largura*/
+      padding: 4rem;
+      /* 
+        como o âncora é uma mrcação inline, a largura "não funciona" e o padding funciona com erro, isto é:
+        o espaçamento fica sobre os outros elementos.
+      */
+
+      display: block;
+
+      /* o 'display: block' deixará os âncoras um abaxio do outro.*/
+
+      display: inline;
+
+      /* deixa um ao lado do outro, ms permitirá o width e padding */
+    }
+  </style>
+
+  <body>
+    <!-- o ideal é colocar uma lista sem valor semântico! -->
+
+    <a href=""
+      >texto
+      <p>nao faz sentido nesse caso.</p></a
+    >
+    <a href="">texto</a>
+    <a href="">texto</a>
+    <a href="">texto</a>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio
+      quo officia explicabo odio! Illum sunt reiciendis architecto quos omnis
+      fuga quis minima quas, itaque, ex rerum culpa, ratione quae?
+    </p>
+    <p>
+      Quia unde asperiores soluta ut nulla quidem non vitae facere quae velit?
+      Dicta, est? Aliquam quidem nisi magni nulla sint repudiandae amet et
+      veniam praesentium? Laborum et enim iure doloremque.
+    </p>
+    <p>
+      Consequatur labore numquam veritatis, tenetur velit commodi illo quibusdam
+      iure optio cumque maxime placeat dolorum quidem eligendi autem enim, sed
+      porro excepturi? Dolor perferendis consequuntur totam ut neque eos
+      pariatur.
+    </p>
+    <p>
+      In, atque illum error mollitia cum nam corporis temporibus accusamus nemo
+      nostrum nesciunt magnam aspernatur tenetur repellendus ad amet quia fugit,
+      est corrupti esse unde quos saepe? Et, esse eos!
+    </p>
+  </body>
+</html>

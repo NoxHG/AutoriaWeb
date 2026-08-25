@@ -1,0 +1,46 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(53, 53, 53);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    transition: 0.3 all;
+}
+
+a:hover {
+    color: rgb(224, 233, 241);
+    transform: scale(0.2);
+}
+
+table {
+    background-color: rgb(194, 0, 0);
+    color: white;
+    border: solid 5px rgb(0, 0, 0);
+    border-radius: 6px;
+    text-align: center;
+}
+
+table tr:nth-child(odd) {
+    background-color: rgb(68, 6, 6);
+}
+
+table td:nth-child(2){
+    font-weight: bold;
+}
+
+table td:nth-child(4){
+    font-weight: bold;
+}
+
+table td {
+    padding: 1rem;
+}
