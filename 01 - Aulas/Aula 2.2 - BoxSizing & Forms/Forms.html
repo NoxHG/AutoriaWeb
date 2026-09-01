@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Forms.css" />
+    <title>BoxSizing e Forms</title>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html"><h1>BoxSizing e Forms</h1></a>
+    </header>
+    <main>
+      <section id="formulário">
+        <h2>FORMULÁRIO DE CADASTRO</h2>
+        <form action="resposta.html" method="get">
+          <label for="nome">Nome: </label>
+          <input type="text" id="nome" /> <br />
+          <label for="email">Email: </label>
+          <input type="email" id="email" /> <br />
+          <input type="submit" value="ENVIAR" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 BoxSizing e Forms. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
+
+<!-- COMENTÁRIOS -->
+<!-- 
+    - FORMULÁRIOS -
+  > a marcação de form envolve os campos de entrada e o botão de envio
+    e o atributo action define a página para onde os dados serão enviados.
+  > pode ter vários formulários em uma só página
+  > o atributo action envia os dados para um arquivo. 
+ -->
+
+ <!-- 
+    - LABELS -
+  A marcação de label é responsável pela criação de um rótulo na marcação do formulário.
+  é importante para a acessibilidade.
+  VISUALMENTE NÃO MUDA NADA!!
+  > o atributo de 'for' deve ter o mesmo valor do ID do componente input equivalente.
+ -->
