@@ -1,0 +1,8 @@
+div {
+    border: 1px dashed rgb(33, 116, 167);
+    width: 30rem;
+    margin: 5rem auto;
+    height: 30rem;
+    padding: 5rem;
+    box-sizing: border-box;
+}
