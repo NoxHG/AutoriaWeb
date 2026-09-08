@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 div {
     border: 1px dashed rgb(33, 116, 167);
     width: 30rem;
@@ -5,4 +6,13 @@ div {
     height: 30rem;
     padding: 5rem;
     box-sizing: border-box;
+=======
+div {
+    border: 1px dashed rgb(33, 116, 167);
+    width: 30rem;
+    margin: 5rem auto;
+    height: 30rem;
+    padding: 5rem;
+    box-sizing: border-box;
+>>>>>>> 8b25156afd3b0cd0e2cd65562e05224e5af054db
 }
