@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label>N1: <input type="text" id="n1" /></label>
+    <button id="dobro">DOBRO</button>
+    <p id="resultado"></p>
+
+    <script>
+      alert("OLÁ MUNDO");
+      alert("J: Really? can't you be quiet for a while?");
+      document.write("OLÁ MUNDO COM WRITE!");
+      console.log("OLÁ MUNDO NO CONSOLE!");
+      document.getElementById("resultado").innerHTML =
+        "OLÁ MUNDO COM innerHTML";
+
+      const botao = document.getElementById("dobro");
+
+      botao.addEventListener("click", function (e) {
+        alert("CLICOU NO BOTÃO");
+      });
+    </script>
+  </body>
+</html>

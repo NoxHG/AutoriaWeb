@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Formulários - Aula 3</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Endereço</legend>
+        <label for="cidade">Cidade</label>
+        <input type="text" id="cidade" list="listacidade" /> <br />
+        <datalist id="listacidade">
+          <option value="Natal"></option>
+          <option value="Recife"></option>
+          <option value="Jõao Pessoa"></option>
+        </datalist>
+      </fieldset>
+      <fieldset>
+        <legend>Áreas de Interesse</legend>
+        <label>
+          <input type="checkbox" name="interesse" id="design" value="design" />
+          <!-- 
+          Componente de checkbox é similar ao 'radio' em relação a sintaxe,
+          porém o checkbox permite selecionar vários
+          - também precisa definir o name, id e value
+          -->
+          Design
+        </label>
+        <br />
+        <label>
+          <input
+            type="checkbox"
+            name="interesse"
+            id="desenvolvimento"
+            value="desenvolvimento"
+          />
+          <!-- 
+          Componente de checkbox é similar ao 'radio'
+          -->
+          Desenvolvimento
+        </label>
+        <br />
+        <label for="data">Data da conclusçao de curso: </label>
+        <input type="date" id="data" />
+
+        <label for="curriculo">Currículo</label>
+        <input type="file" id="curriculo" />
+        <!--
+         componente que permite anexar um arquivo.
+         a restrição deve ser feita com javascript.
+         -->
+      </fieldset>
+      <!-- O fileset é um componente para organziar os campos do formulário, sendo totalemnte opciconal. -->
+      <input type="submit" value="ENVIAR" />
+    </form>
+  </body>
+</html>
