@@ -1,0 +1,31 @@
+        * {  /* Significa ______ */
+            scroll-behavior: auto;
+            color: rgb(0, 0, 0);
+        }
+
+        div .absolute{
+            width: 15rem;
+            height: 15rem;
+            background-color: bisque;
+            border: 1px solid black; 
+            opacity: 0.9; /* coloca tudo com opacidade, vai de 0 a 1*/
+            padding: 2rem;            
+            position: absolute;
+        }
+
+        div .relative {
+            position: relative;
+        }
+
+        div .absolute2 {
+            background-color: aqua;
+            top: 30px;
+            right: 900px;
+        }
+
+        footer{
+            width: 100vw;/*vw = viewport; width = largura do dispositivo = 100; */
+            background-color: aqua;
+            position: fixed;
+            padding: 2rem;
+        }
