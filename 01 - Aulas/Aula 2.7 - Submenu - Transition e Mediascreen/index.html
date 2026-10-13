@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submenu: Transition e Mediascreen</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      nav > ol {
+        display: flex; /*coloca os itens um ao lado o outro*/
+      }
+
+      ol > li {
+        position: relative; /*é necessário que o item do menu que tem um submenu, abra se respectivo*/
+        background-color: cadetblue;
+        list-style-type: none;
+        padding: 2rem;
+      }
+
+      ol ul {
+        visibility: hidden; /*e para ter visibility ou display, porque o submenu so com opacity continua ocupando o espaço*/
+        opacity: 0; /*o submenu é totalmente invisivel, por padrão*/
+        /*é possível ultilzar: visibility: hidden, display: none ou opacity.*/
+        position: absolute; /*o submenu ficará sobre os elementos*/
+        background-color: black;
+        padding: 2rem;
+        z-index: 2;
+        transition:
+          opacity 0.4s,
+          background-color 0.5s,
+          ease-in-out 0.3s; /*para o submenu ficar em cima dos itens, visto que ele é position relative.*/
+      }
+
+      ul a {
+        color: aliceblue;
+      }
+
+      ol li:hover ul {
+        visibility: visible;
+        background-color: rgb(165, 42, 85);
+        opacity: 1;
+        /* o atrbuto de transition cria uma transição leve entre dois estados*/
+        /*
+        - para a transição funcionar é necessário colocar o valor inicial e o valor do
+        atributo da formatação, assim como o tomepo de transição em segundo.
+        - não podemos colocar mais de um atributo 'transition' neste bloco de formatação
+        */
+        /*efeito do mouse over com css:
+        
+        */
+      }
+
+      /* RESPONSIVIDADE */
+      @media screen and (max-width: 1280px){
+        body{
+            background-color: aqua;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Corrida do MATHHHEUSRN 22 anos</h1>
+      <nav>
+        <ol>
+          <li><a href="">Percurso</a></li>
+          <li>
+            <a href="">Programação</a>
+            <ul>
+              <li><a href="">Exposição</a></li>
+              <li><a href="">Banda</a></li>
+            </ul>
+          </li>
+          <!-- ATENÇÃO!!! LI FECHA AQUI! -->
+          <li><a href="">Organizadores</a></li>
+          <li>
+            <a href="">Prêmios</a>
+            <ul>
+              <li><a href="">Geral</a></li>
+              <li><a href="">Elite</a></li>
+              <li><a href="">Servidores</a></li>
+              <li><a href="">Faixa Etária</a></li>
+            </ul>
+          </li>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <div><p>Card</p></div>
+    </main>
+    <footer>Desenvolvido por IFRN</footer>
+  </body>
+</html>
