@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <h1>JAVASCRIPT</h1>
+    <ul>
+      <li>
+        JAVASCRIPT é uma linguagem de programação FRONT-END e pode fazer
+        requisições BACKEND
+      </li>
+      <li>Diferencia Maiúsculas das minúsculas</li>
+      <li>o ";" é opicional</li>
+      <li>Usado para dar comportamento, INTERATIVIDADE!</li>
+      <li>
+        eXEMPLOS DE USO: modal, janela de mensagem, correção de form, galeria de
+        fotos...
+      </li>
+    </ul>
+
+    <script>
+      alert("OLÁ MUNDO");
+      let minora = window.confirm("Hoje vai ter aula de minora?");
+      document.write("<p>" + minora + "</p>"); //Document.write escreve no HTML
+
+      let = window.prompt("Qual é o seu nome?");
+      document.write("<p>" + nome + "</p>"); //Document.write escreve no HTML
+
+      // 3 janelas   (Chatas, não usem!)
+      // alert   :   é apenas uma mensagem.
+      // confirm :   retorna um true e false.
+      // prompt  :   retorna um texto.
+
+      document.write("Olá mundo no document.write");
+      console.log("Olá mundo no console.log");
+      document.getElementById("olamundo").innerHTML =
+        "Olá mundo no getElementById";
+      // é mais indicado usar o getElementById que o document.write, pois o document.write apaga tudo que está no HTML e escreve apenas o que você colocar nele.
+    </script>
+
+    <script>
+      document.write("<h2>VARIÁVEIS</h2>");
+      let num = 5;
+      let numdecimal = 54.87;
+      let curso = "Javascript";
+      let booleano = true;
+
+      document.write("<h2>OPERADORES ARITIMÉTICOS</h2>");
+      console.log(54 + 98);
+      console.log(54 - 98);
+      console.log(54 * 98);
+      console.log(54 / 98);
+
+      let a = 87;
+      console.log(++a);
+    </script>
+  </body>
+</html>
