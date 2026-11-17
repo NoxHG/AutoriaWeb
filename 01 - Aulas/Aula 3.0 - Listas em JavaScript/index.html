@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSLIST</title>
+</head>
+<body>
+    <h1>Array e Math</h1>
+    <h2>Array</h2>
+    <script>
+        //
+        let alunos = [
+            "Ravi", "Vitor",
+            "Aline", "Lara"
+        ]
+        console.log(alunos[0])
+        console.log(`Como imprimir um item da lista: ${alunos[1]}` )
+        console.log('Como imprimir um item da lista: ' + alunos[2] )
+        console.log(`Lista como string ${alunos.toString()}`       )
+        console.log(`comprimento da lista: ${alunos.length}`       )
+        console.log(`O ÚLTIMO item: ${alunos.length-1}`            )
+        console.log(`Ordenação: ${alunos.sort()}`                  ) // Ordenação
+        console.log(`Adiciona o item ${alunos.push("Letícia")}`    ) // Retorna o comprimento
+        console.log(`Lista como string ${alunos.toString()}`       )
+        alunos.pop()
+        console.log(`Lista: ${alunos.join(" - ")}`                 )
+        alunos.splice(2, 2)                                       //Recebe 2 parâmetros. 1 Parâmetro = Quantia do item que quero remover. 2 Parâmetro = O Índice
+        console.log(`Lista: ${alunos.join(' | ')}`                 )
+    </script>
+
+    <h2>Math</h2>
+    <script>
+        // 
+        console.log(Math.round(5.6)               )     // Imprime o valor mais próximo
+                                                        // .ceil()  <- arredonda para cima | .floor() <- arredonda para baixo
+        console.log(Math.max(7,8,9,4)             )     // .min()   <- retorna o menor valor
+        console.log(Math.random()                 )     // Retorna um número randômico entre 0 e 1
+        console.log(Math.random() * 10            )     // Retorna um número randômico entre 0 e 10
+        console.log(Math.floor(Math.random() * 10))     // Retorna um número INTEIRO randômico entre 0 e 10
+    </script>
+    <label>Nome: <input type ="text" id="nome"></label>
+    <button id="gerar">GERAR</button>
+    <p id="resultado"></p>
+    <script>
+        const gerar     = document.querySelector("#gerar"    )
+        const resultado = document.getElementById("resultado")
+        gerar.addEventListener("click", function(e){
+            const nomed = document.getElementById("nome")
+            let cores = [
+                "Azul", "Vermelho",
+                "Verde", "Amarelo",
+                "Roxo", "Laranja"
+            ]
+            // cores[Math.floor(random() * 6)]
+            // retorna uma das cores da lista de forma randômica
+
+            resultado.style.fontSize = "2rem"
+            resultado.innerHTML      = nomed.value
+        })
+    </script>
+</body>
+</html>
